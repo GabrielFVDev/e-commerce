@@ -5,10 +5,16 @@
 
   color-scheme: light dark;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #F2F0F1;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }

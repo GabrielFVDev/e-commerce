@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    padding: 20px 18px;
+    justify-content: space-between;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}

@@ -1,9 +1,10 @@
+import { Header } from '@/components/header'
 import styles from './styles.module.scss'
 
 export function Home() {
   return (
     <>
-      <p>Ola mundo</p>
+      <Header />
     </>
   )
 }
