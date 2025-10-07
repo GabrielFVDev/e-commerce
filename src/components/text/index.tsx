@@ -8,7 +8,7 @@ export function Text(props: TextProps) {
     weight = 'regular',
     size = 16,
     align = 'left',
-    font = 'jakarta',
+    font = 'inter',
     color = 'black',
   } = props
 
