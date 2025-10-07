@@ -1,5 +1,3 @@
-import LogoDesktop from '@/assets/logo-desktop.svg'
-import LogoMobile from '@/assets/logo-mobile.svg'
 import {
   ListIcon,
   MagnifyingGlassIcon,
@@ -8,6 +6,8 @@ import {
 } from '@phosphor-icons/react'
 
 import styles from './styles.module.scss'
+import LogoMobile from '@/assets/logo-mobile.svg'
+import LogoDesktop from '@/assets/logo-desktop.svg'
 import { useIsMobile } from '@/hooks/use-mobile'
 
 export function Header() {
