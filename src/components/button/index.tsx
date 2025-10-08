@@ -1,7 +1,7 @@
-import { Card } from '../card'
-import { Text } from '../text'
 import type { ButtonProps } from './interface'
 import styles from './styles.module.scss'
+import { Card } from '../card'
+import { Text } from '../text'
 
 export function Button(props: ButtonProps) {
   return (
