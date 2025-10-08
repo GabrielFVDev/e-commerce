@@ -49,3 +49,15 @@
     background-color: red;
     height: 525px;
 }
+
+.arrivals {
+    display: flex;
+    justify-self: center;
+    margin-top: 50px;
+    margin-bottom: 32px;
+}
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+}

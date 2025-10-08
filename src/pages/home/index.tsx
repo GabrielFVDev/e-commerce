@@ -10,6 +10,7 @@ import GucciLogo from '@/assets/brands/gucci.svg'
 import PradaLogo from '@/assets/brands/prada.svg'
 import VersaceLogo from '@/assets/brands/versace.svg'
 import ZaraLogo from '@/assets/brands/zara.svg'
+import ShirtImage from '@/assets/clothes/shirt.svg'
 
 export function Home() {
   return (
@@ -78,6 +79,24 @@ export function Home() {
             <img src={CalvinKleinLogo} alt="" />
           </div>
         </Card>
+        <div className={styles.arrivals}>
+          <Text font="montserrat" size={32} weight="bold" lineHeight={34}>
+            NEW ARRIVALS
+          </Text>
+        </div>
+        <div className={styles.container}>
+          <div className={styles.productCard}>
+            <Card borderRadius={13} color="grey">
+              <img src={ShirtImage} alt="" />
+            </Card>
+            <Text font="montserrat" size={16} weight="bold" lineHeight={34}>
+              T-SHIRT WITH TAPE DETAILS
+            </Text>
+            <Text font="montserrat" size={16} weight="bold" lineHeight={34}>
+              $120
+            </Text>
+          </div>
+        </div>
       </main>
     </>
   )
