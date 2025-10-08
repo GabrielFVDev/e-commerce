@@ -2,6 +2,7 @@ import { Header } from '@/components/header'
 import { Text } from '@/components/text'
 import styles from './styles.module.scss'
 import { Card } from '@/components/card'
+import { Button } from '@/components/button'
 
 export function Home() {
   return (
@@ -23,6 +24,12 @@ export function Home() {
             </Text>
           </Card>
         </div>
+        <Button
+          title="Shop Now"
+          onClick={() => {
+            console.log('clicou')
+          }}
+        />
       </main>
     </>
   )

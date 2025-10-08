@@ -5,7 +5,7 @@ export function Card(props: CardProps) {
   const {
     children,
     borderColor,
-    color = 'grey',
+    color = 'black',
     borderRadius = 13,
     padding = 10,
   } = props
