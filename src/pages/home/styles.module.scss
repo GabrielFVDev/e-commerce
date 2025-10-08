@@ -3,5 +3,49 @@
     padding-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+}
+
+.description{
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+.button {
+    margin-bottom: 20px;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.customers {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    justify-items: center;
+}
+
+.firstLineBrands {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.secondLineBrands {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.imageSection {
+    background-color: red;
+    height: 525px;
 }

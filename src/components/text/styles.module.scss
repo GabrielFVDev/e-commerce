@@ -1,4 +1,7 @@
 // Tamanhos do texto
+.size-12 {
+    font-size: 12px;
+}
 
 .size-14 {
     font-size: 14px;
@@ -10,6 +13,10 @@
 
 .size-20 {
     font-size: 20px;
+}
+
+.size-24 {
+    font-size: 24px;
 }
 
 .size-32 {
@@ -91,4 +98,10 @@
 
 .line-height-34 {
     line-height: 34px;
+}
+
+// Transparência
+
+.transparent-60 {
+    opacity: 0.6;
 }

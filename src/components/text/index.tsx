@@ -5,6 +5,7 @@ export function Text(props: TextProps) {
   const {
     children,
     lineHeight,
+    transparent,
     weight = 'regular',
     size = 16,
     align = 'left',
@@ -20,6 +21,7 @@ export function Text(props: TextProps) {
     font && styles[`font-${font}`],
     color && styles[`color-${color}`],
     lineHeight && styles[`line-height-${lineHeight}`],
+    transparent && styles[`transparent-${transparent}`],
   ]
     .filter(Boolean)
     .join(' ')
