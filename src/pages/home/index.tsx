@@ -3,6 +3,7 @@ import { Text } from '@/components/text'
 import styles from './styles.module.scss'
 import { Button } from '@/components/button'
 import { Card } from '@/components/card'
+import { ProductCard } from '@/components/productCard'
 
 import HeaderSection from '@/assets/header-section.avif'
 import CalvinKleinLogo from '@/assets/brands/calvin-klein.svg'
@@ -11,7 +12,7 @@ import PradaLogo from '@/assets/brands/prada.svg'
 import VersaceLogo from '@/assets/brands/versace.svg'
 import ZaraLogo from '@/assets/brands/zara.svg'
 import ShirtImage from '@/assets/clothes/shirt.svg'
-import { ProductCard } from '@/components/productCard'
+import StripedShirtImage from '@/assets/clothes/stripedShirt.svg'
 
 export function Home() {
   return (
@@ -94,6 +95,52 @@ export function Home() {
               price={120}
             />
             <ProductCard
+              image={StripedShirtImage}
+              productName="T-shirt with Tape Details"
+              rating={4.5}
+              price={120}
+            />
+            <ProductCard
+              image={StripedShirtImage}
+              productName="T-shirt with Tape Details"
+              rating={4.5}
+              price={120}
+            />
+            <ProductCard
+              image={StripedShirtImage}
+              productName="T-shirt with Tape Details"
+              rating={4.5}
+              price={120}
+            />
+          </section>
+
+          <div className={styles.viewButton}>
+            <Button title="View All" color="white" backgroundColor="black" />
+          </div>
+        </div>
+
+        <hr className={styles.divider} />
+
+        <div className={styles.arrivals}>
+          <Text font="montserrat" size={32} weight="bold" lineHeight={34}>
+            top selling
+          </Text>
+        </div>
+        <div className={styles.container}>
+          <section className={styles.productsSection}>
+            <ProductCard
+              image={StripedShirtImage}
+              productName="T-shirt with Tape Details"
+              rating={4.5}
+              price={120}
+            />
+            <ProductCard
+              image={StripedShirtImage}
+              productName="T-shirt with Tape Details"
+              rating={4.5}
+              price={120}
+            />
+            <ProductCard
               image={ShirtImage}
               productName="T-shirt with Tape Details"
               rating={4.5}
@@ -106,6 +153,10 @@ export function Home() {
               price={120}
             />
           </section>
+
+          <div className={styles.viewButton}>
+            <Button title="View All" color="white" backgroundColor="black" />
+          </div>
         </div>
       </main>
     </>

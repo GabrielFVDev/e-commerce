@@ -75,4 +75,11 @@
 .productsSection {
     display: flex;
     flex-direction: row;
+    overflow-x: scroll;
+    scrollbar-color: transparent transparent;
+}
+
+.viewButton {
+    margin-top: 26px;
+    margin-bottom: 40px;
 }

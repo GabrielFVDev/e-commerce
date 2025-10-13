@@ -4,13 +4,15 @@ import { Card } from '../card'
 import { Text } from '../text'
 
 export function Button(props: ButtonProps) {
+  const { title, color = 'black', backgroundColor = 'white' } = props
+
   return (
     <div className={styles.button}>
-      <Card color={props.color} borderRadius={28}>
+      <Card color={color} borderRadius={28} borderColor="grey">
         <div className={styles.buttonContent}>
           <button {...props}>
-            <Text color="white" align="center">
-              {props.title}
+            <Text color={backgroundColor} align="center">
+              {title}
             </Text>
           </button>
         </div>
