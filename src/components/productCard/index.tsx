@@ -8,7 +8,7 @@ export function ProductCard(props: ProductsProps) {
   return (
     <>
       <div className={styles.productCard}>
-        <Card borderRadius={13} color="grey">
+        <Card borderRadius={13} color="white">
           <img src={props.image} alt={props.productDescription} />
         </Card>
         <Text font="montserrat" size={16} weight="bold" lineHeight={34}>

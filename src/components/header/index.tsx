@@ -6,9 +6,9 @@ import {
 } from '@phosphor-icons/react'
 
 import styles from './styles.module.scss'
-import LogoMobile from '@/assets/logo-mobile.svg'
-import LogoDesktop from '@/assets/logo-desktop.svg'
+
 import { useIsMobile } from '@/hooks/use-mobile'
+import { LogoDesktop, LogoMobile } from '@/assets/index'
 
 export function Header() {
   const isMobile = useIsMobile()

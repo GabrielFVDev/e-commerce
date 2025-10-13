@@ -4,15 +4,18 @@ import styles from './styles.module.scss'
 import { Button } from '@/components/button'
 import { Card } from '@/components/card'
 import { ProductCard } from '@/components/productCard'
-
-import HeaderSection from '@/assets/header-section.avif'
-import CalvinKleinLogo from '@/assets/brands/calvin-klein.svg'
-import GucciLogo from '@/assets/brands/gucci.svg'
-import PradaLogo from '@/assets/brands/prada.svg'
-import VersaceLogo from '@/assets/brands/versace.svg'
-import ZaraLogo from '@/assets/brands/zara.svg'
-import ShirtImage from '@/assets/clothes/shirt.svg'
-import StripedShirtImage from '@/assets/clothes/stripedShirt.svg'
+import {
+  CalvinKleinLogo,
+  CasualCategoryImage,
+  GucciLogo,
+  HeaderSection,
+  PradaLogo,
+  ShirtImage,
+  StripedShirtImage,
+  VersaceLogo,
+  ZaraLogo,
+} from '@/assets/index'
+import { CategoryCard } from '@/components/categoryCard'
 
 export function Home() {
   return (
@@ -158,6 +161,30 @@ export function Home() {
             <Button title="View All" color="white" backgroundColor="black" />
           </div>
         </div>
+
+        <Card color="grey" borderRadius={20}>
+          <div className={styles.categoryTitle}>
+            <Text
+              font="montserrat"
+              align="center"
+              size={32}
+              weight="bold"
+              lineHeight={34}
+            >
+              BROWSE BY <br />
+              dress STYLE
+            </Text>
+          </div>
+          <div>
+            <CategoryCard title="Casual" imageSrc={CasualCategoryImage} />
+          </div>
+          <div>
+            <CategoryCard title="Casual" imageSrc={CasualCategoryImage} />
+          </div>
+          <div>
+            <CategoryCard title="Casual" imageSrc={CasualCategoryImage} />
+          </div>
+        </Card>
       </main>
     </>
   )

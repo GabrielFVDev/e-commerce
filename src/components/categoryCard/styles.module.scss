@@ -1,0 +1,22 @@
+.categoryTitle {
+    margin-bottom: 28px;
+    margin-top: 40px;
+}
+
+.categoryText {
+    display: flex;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+
+.categoryContent {
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 190px;
+    border-radius: 20px;
+    position: relative;
+}
+
