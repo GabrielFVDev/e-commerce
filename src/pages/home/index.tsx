@@ -11,6 +11,7 @@ import PradaLogo from '@/assets/brands/prada.svg'
 import VersaceLogo from '@/assets/brands/versace.svg'
 import ZaraLogo from '@/assets/brands/zara.svg'
 import ShirtImage from '@/assets/clothes/shirt.svg'
+import { ProductCard } from '@/components/productCard'
 
 export function Home() {
   return (
@@ -85,17 +86,26 @@ export function Home() {
           </Text>
         </div>
         <div className={styles.container}>
-          <div className={styles.productCard}>
-            <Card borderRadius={13} color="grey">
-              <img src={ShirtImage} alt="" />
-            </Card>
-            <Text font="montserrat" size={16} weight="bold" lineHeight={34}>
-              T-SHIRT WITH TAPE DETAILS
-            </Text>
-            <Text font="montserrat" size={16} weight="bold" lineHeight={34}>
-              $120
-            </Text>
-          </div>
+          <section className={styles.productsSection}>
+            <ProductCard
+              image={ShirtImage}
+              productName="T-shirt with Tape Details"
+              rating={4.5}
+              price={120}
+            />
+            <ProductCard
+              image={ShirtImage}
+              productName="T-shirt with Tape Details"
+              rating={4.5}
+              price={120}
+            />
+            <ProductCard
+              image={ShirtImage}
+              productName="T-shirt with Tape Details"
+              rating={4.5}
+              price={120}
+            />
+          </section>
         </div>
       </main>
     </>

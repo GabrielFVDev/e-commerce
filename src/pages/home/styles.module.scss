@@ -61,3 +61,18 @@
     display: flex;
     flex-direction: column;
 }
+
+.evaluation {
+    display: flex;
+    flex-direction: row;
+}
+
+.stars {
+    margin-right: 1px;
+    padding: 0;
+}
+
+.productsSection {
+    display: flex;
+    flex-direction: row;
+}
