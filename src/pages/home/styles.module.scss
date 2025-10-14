@@ -88,3 +88,71 @@
     margin-bottom: 28px;
     margin-top: 40px;
 }
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categorySubtitle {
+    margin-bottom: 16px;
+    width: 330px;
+}
+
+.categoryLast {
+    margin-bottom: 27px;
+    width: 330px;
+}
+
+.customersTitle {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.arrows {
+    display: flex;
+    gap: 16px;
+    align-items: end;
+}
+
+.customer {
+    display: flex;
+    align-items: center;
+}
+
+.customerRating {
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 24px;
+}
+
+.newsletter {
+    margin-bottom: 32px;
+}
+
+.newsletterInput {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.footer {
+    padding: 0 16px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F0F0F0;
+}
+
+.footerText {
+    margin-top: 14px;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}

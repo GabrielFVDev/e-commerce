@@ -7,8 +7,12 @@ import { ProductCard } from '@/components/productCard'
 import {
   CalvinKleinLogo,
   CasualCategoryImage,
+  FormalCategoryImage,
   GucciLogo,
+  GymCategoryImage,
   HeaderSection,
+  LogoMobile,
+  PartyCategoryImage,
   PradaLogo,
   ShirtImage,
   StripedShirtImage,
@@ -16,6 +20,17 @@ import {
   ZaraLogo,
 } from '@/assets/index'
 import { CategoryCard } from '@/components/categoryCard'
+import {
+  ArrowLeftIcon,
+  ArrowRightIcon,
+  CheckCircleIcon,
+  FacebookLogoIcon,
+  GithubLogoIcon,
+  InstagramLogoIcon,
+  TwitterLogoIcon,
+} from '@phosphor-icons/react'
+import { Rating } from '@/components/rating'
+import { Input } from '@/components/input'
 
 export function Home() {
   return (
@@ -162,29 +177,102 @@ export function Home() {
           </div>
         </div>
 
-        <Card color="grey" borderRadius={20}>
-          <div className={styles.categoryTitle}>
-            <Text
-              font="montserrat"
-              align="center"
-              size={32}
-              weight="bold"
-              lineHeight={34}
-            >
-              BROWSE BY <br />
-              dress STYLE
+        <section className={styles.container}>
+          <Card color="grey" borderRadius={20}>
+            <div className={styles.categoryTitle}>
+              <Text
+                font="montserrat"
+                align="center"
+                size={32}
+                weight="bold"
+                lineHeight={34}
+              >
+                BROWSE BY <br />
+                dress STYLE
+              </Text>
+            </div>
+            <div className={styles.categories}>
+              <div className={styles.categorySubtitle}>
+                <CategoryCard title="Casual" imageSrc={CasualCategoryImage} />
+              </div>
+              <div className={styles.categorySubtitle}>
+                <CategoryCard title="Formal" imageSrc={FormalCategoryImage} />
+              </div>
+              <div className={styles.categorySubtitle}>
+                <CategoryCard title="Party" imageSrc={PartyCategoryImage} />
+              </div>
+              <div className={styles.categoryLast}>
+                <CategoryCard title="Gym" imageSrc={GymCategoryImage} />
+              </div>
+            </div>
+          </Card>
+        </section>
+
+        <section className={styles.container}>
+          <div className={styles.customersTitle}>
+            <Text font="montserrat" weight="bold" size={32} lineHeight={36}>
+              OUR HAPPY CUSTOMERS
+            </Text>
+
+            <div className={styles.arrows}>
+              <ArrowLeftIcon weight="bold" />
+              <ArrowRightIcon weight="bold" />
+            </div>
+          </div>
+        </section>
+
+        <div className={styles.customerRating}>
+          <Card color="white" borderColor="grey" padding={16}>
+            <Rating rating={5} />
+            <div className={styles.customer}>
+              <Text font="inter" weight="bold" size={16} lineHeight={22}>
+                Sarah M.
+              </Text>
+              <CheckCircleIcon color="#01AB31" size={15} />
+            </div>
+            <Text font="inter" size={14} lineHeight={20} weight="regular">
+              ”Im blown away by the quality and style of the clothes I received
+              from Shop.co. From casual wear to elegant dresses, every piece Ive
+              bought has exceeded my expectations.”
+            </Text>
+          </Card>
+        </div>
+
+        <div className={styles.container}>
+          <Card color="black" padding={16} borderRadius={20}>
+            <div className={styles.newsletter}>
+              <Text color="white" font="montserrat" size={32} weight="bold">
+                STAY UPTO DATE ABOUT OUR <br /> LATEST OFFERS
+              </Text>
+            </div>
+
+            <Input placeholder="Enter your email address" />
+            <div className={styles.newsletterInput}>
+              <Card color="white" borderRadius={28}>
+                <Text font="inter" size={14} weight="regular" align="center">
+                  Subscribe to Newsletter
+                </Text>
+              </Card>
+            </div>
+          </Card>
+        </div>
+
+        <footer className={styles.footer}>
+          <img src={LogoMobile} width={140} height={24} alt="" />
+          <div className={styles.footerText}>
+            <Text font="inter" weight="regular" size={14} lineHeight={20}>
+              We have clothes that suits your style and which <br /> you’re
+              proud to wear. From women to men.
             </Text>
           </div>
-          <div>
-            <CategoryCard title="Casual" imageSrc={CasualCategoryImage} />
+
+          <div className={styles.footerLinks}>
+            <TwitterLogoIcon size={28} weight="fill" />
+            <FacebookLogoIcon size={28} weight="fill" />
+            <InstagramLogoIcon size={28} weight="fill" />
+            <GithubLogoIcon size={28} weight="fill" />
           </div>
-          <div>
-            <CategoryCard title="Casual" imageSrc={CasualCategoryImage} />
-          </div>
-          <div>
-            <CategoryCard title="Casual" imageSrc={CasualCategoryImage} />
-          </div>
-        </Card>
+        </footer>
       </main>
     </>
   )
