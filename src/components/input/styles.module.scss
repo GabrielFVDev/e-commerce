@@ -5,7 +5,30 @@
     height: 30px;
 }
 
-.icon {
+.icons {
     display: flex;
     gap: 12px;
+}
+
+.iconBackground {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.inputField {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background: transparent;
+    color: rgba(0, 0, 0, 0.4);
+
+    &::placeholder {
+        color: rgba(0, 0, 0, 0.4);
+    }
 }
