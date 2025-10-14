@@ -7,6 +7,7 @@ export interface TextProps {
   align?: 'left' | 'center' | 'right' | 'justify'
   font?: 'inter' | 'montserrat'
   color?: 'white' | 'black'
-  lineHeight?: 20 | 22 | 34 | 36
+  lineHeight?: 16 | 20 | 22 | 34 | 36
   transparent?: 60
+  letterSpacing?: 3
 }

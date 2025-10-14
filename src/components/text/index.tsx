@@ -6,6 +6,7 @@ export function Text(props: TextProps) {
     children,
     lineHeight,
     transparent,
+    letterSpacing,
     weight = 'regular',
     size = 16,
     align = 'left',
@@ -22,6 +23,7 @@ export function Text(props: TextProps) {
     color && styles[`color-${color}`],
     lineHeight && styles[`line-height-${lineHeight}`],
     transparent && styles[`transparent-${transparent}`],
+    letterSpacing && styles[`letter-spacing-${letterSpacing}`],
   ]
     .filter(Boolean)
     .join(' ')

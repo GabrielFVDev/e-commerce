@@ -156,3 +156,30 @@
     margin-top: 20px;
     margin-bottom: 24px;
 }
+
+.footerSectionOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 83px;
+    margin-bottom: 24px;
+}
+
+.footerSectionTwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 110px;
+    margin-bottom: 24px;
+}
+
+.divider {
+    width: 358px;
+}
+
+.payments {
+    display: flex;
+    align-self: center;
+    margin-top: 4px;
+    margin-bottom: 40px;
+}

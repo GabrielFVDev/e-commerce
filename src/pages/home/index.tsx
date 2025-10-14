@@ -13,6 +13,7 @@ import {
   HeaderSection,
   LogoMobile,
   PartyCategoryImage,
+  PaymentsMobileIcon,
   PradaLogo,
   ShirtImage,
   StripedShirtImage,
@@ -31,6 +32,7 @@ import {
 } from '@phosphor-icons/react'
 import { Rating } from '@/components/rating'
 import { Input } from '@/components/input'
+import { About } from '@/components/about'
 
 export function Home() {
   return (
@@ -271,6 +273,59 @@ export function Home() {
             <FacebookLogoIcon size={28} weight="fill" />
             <InstagramLogoIcon size={28} weight="fill" />
             <GithubLogoIcon size={28} weight="fill" />
+          </div>
+
+          <div>
+            <section className={styles.footerSectionOne}>
+              <About
+                title="COMPANY"
+                firstParagraph="About"
+                secondParagraph="Features"
+                thirdParagraph="Works"
+                fourthParagraph="Career"
+              />
+              <About
+                title="HELP"
+                firstParagraph={
+                  <>
+                    Customer <br /> Support
+                  </>
+                }
+                secondParagraph="Delivery Details"
+                thirdParagraph="Terms & Conditions"
+                fourthParagraph="Privacy Policy"
+              />
+            </section>
+            <section className={styles.footerSectionTwo}>
+              <About
+                title="FAQ"
+                firstParagraph="Account"
+                secondParagraph={
+                  <>
+                    Manage <br /> Deliveries
+                  </>
+                }
+                thirdParagraph="Orders"
+                fourthParagraph="Payment"
+              />
+              <About
+                title="RESOURCES"
+                firstParagraph="Free eBook"
+                secondParagraph="Developer Tutorial"
+                thirdParagraph="How to - Blog"
+                fourthParagraph="Youtube Playlist"
+              />
+            </section>
+          </div>
+
+          <hr className={styles.divider} />
+
+          <Text weight="regular" size={14} align="center">
+            Shop.co © 2000-2023, All Rights Reserved
+          </Text>
+
+          <div className={styles.payments}>
+            <img src={PaymentsMobileIcon} alt="Method Payment" />
           </div>
         </footer>
       </main>

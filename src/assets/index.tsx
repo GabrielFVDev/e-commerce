@@ -1,6 +1,6 @@
 // Header
 
-export { default as HeaderSection } from './header-section.avif'
+export { default as HeaderSection } from './photos/header-section.avif'
 
 // Brands
 export { default as CalvinKleinLogo } from './brands/calvin-klein.svg'
@@ -20,7 +20,10 @@ export { default as FormalCategoryImage } from './category/formal.png'
 export { default as PartyCategoryImage } from './category/party.png'
 export { default as GymCategoryImage } from './category/gym.png'
 
-// Logo
+// Icons
 
-export { default as LogoMobile } from './logo-mobile.svg'
-export { default as LogoDesktop } from './logo-desktop.svg'
+export { default as LogoMobile } from './icons/logo-mobile.svg'
+export { default as LogoDesktop } from './icons/logo-desktop.svg'
+
+// PaymentIcons
+export { default as PaymentsMobileIcon } from './payments/payments-mobile.svg'
