@@ -7,6 +7,7 @@ export function Text(props: TextProps) {
     lineHeight,
     transparent,
     letterSpacing,
+    key,
     weight = 'regular',
     size = 16,
     align = 'left',
@@ -28,5 +29,9 @@ export function Text(props: TextProps) {
     .filter(Boolean)
     .join(' ')
 
-  return <p className={className}>{children}</p>
+  return (
+    <p className={className} key={key}>
+      {children}
+    </p>
+  )
 }

@@ -1,0 +1,41 @@
+:root {
+    background-color: #F2F0F1;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    margin: 0px 16px;
+}
+
+.breadcrumb {
+    margin-bottom: 22px;
+}
+
+.shirtImage {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.shirtsList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.evaluation {
+    display: flex;
+    flex-direction: row;
+}
+
+.stars {
+    margin-right: 16px;
+    padding: 0;
+}

@@ -12,6 +12,7 @@ export { default as ZaraLogo } from './brands/zara.svg'
 // Clothes
 export { default as ShirtImage } from './clothes/shirt.svg'
 export { default as StripedShirtImage } from './clothes/stripedShirt.svg'
+export { default as BrownShirtImage } from './clothes/brown-shirt.svg'
 
 // Category
 

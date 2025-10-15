@@ -1,0 +1,11 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.4);
+}
